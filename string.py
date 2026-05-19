@@ -119,3 +119,12 @@ print(str5.index("is"))
 # Ex:
 print(str5.isalnum())
 
+# isalpha(): The isalnum() methode returns True only if the entire string only consists
+#     of A-Z, a-z. if any other characters or puntuations or numbers(0-9) are present, then itv return False.
+# Ex:
+print(str5.isalpha())
+
+# islower():
+
+
+

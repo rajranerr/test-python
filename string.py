@@ -100,5 +100,22 @@ print(str5.count("i"))
 print(str5.endswith("!!!"))
 print(str5.endswith("650"))
 
+# find(): The find() mathod searches for the first occurrence of the given value
+#         and return the index where it is present. if given value is absent from the string the return -1.
+# Ex:
+print(str5.find("bike"))
 
+# index(): the index() method searches for the first occurrence of the given value 
+#        and return the index where it is present. If given value is absent from the string then raise an exception.
+# Ex:
+print(str5.index("is"))
+
+# isalnum(): the isalnum() method is a built-in string function used to check if a string consists entirely of alphanumeric characters.
+#         It returns a Boolean value (True or False) based on the content of the string.
+# Alphanumeric Definition: A character is considered alphanumeric if it is either a letter (A-Z, a-z) or a number (0-9).
+# Return Values:True: If all characters in the string are alphanumeric and there is at least one character.
+# False: If the string is empty or contains at least one non-alphanumeric character, such as spaces, punctuation, or special symbols (e.g., !, @, #).
+# No Parameters: The method does not take any arguments.
+# Ex:
+print(str5.isalnum())
 

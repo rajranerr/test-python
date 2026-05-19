@@ -8,3 +8,9 @@ name = input("enter your name: ")
 print("Hello,"+ name)
 
 
+# length(len): len function is use for find the length of the text or line.
+ # Ex:
+text = "Hello,nupur"
+print(len(text))
+
+

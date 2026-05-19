@@ -72,3 +72,33 @@ print(len(str2))
 str3 = "kulalux !!!"
 print(str3.rstrip("!"))
 
+# replace(): The replace() methode replace all occurences of a string with another string.
+# Ex:
+str4 = "silver bike"
+print(str4.replace("silver", "black"))
+
+# split(): the split() method split the given string at the specified instance and return the separated the string as list items.
+# Ex:
+
+str5 = "my favorite bike is intersepter 650"
+print(str5.split(" "))
+
+# capitalize():  method converts the first character of a string to uppercase and all remaining characters to lowercase.
+# Ex:
+print(str5.capitalize())
+
+# Center(): the center() method sligns the string to the center as per the parameters given by the user.
+# Ex:
+print(str5.center(50))
+
+# count(): the methode returns the number of lines the given value has occured within the given string.
+# Ex:
+print(str5.count("i"))
+
+# endswith(): The endswith() method checks if the string ends with a given value. If yes then return True, else return False.
+# Ex:
+print(str5.endswith("!!!"))
+print(str5.endswith("650"))
+
+
+

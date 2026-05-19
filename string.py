@@ -23,10 +23,12 @@
 # Formatting: Use f-strings (e.g., f"Hello, {name}") to insert variables directly into strings.
 # Built-in Methods: Operations like .upper(), .lower(), .strip() (removing whitespace), and .replace(). 
 
+# string is difine as a duble quotes.
+
 # Ex:
 
-text = "Hello, Kulalux"
-print(text[5])
+text = "Hello,Kulalux"
+print(text[6])
 print(text.upper())
 print(len(text))
 

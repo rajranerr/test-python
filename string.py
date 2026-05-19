@@ -32,5 +32,43 @@ print(text[6])
 print(text.upper())
 print(len(text))
 
+# string slicing:
 
+name = "Hello,Kula"
+print(len(name))
+print(name[6:10])
+ 
+# String as an array:
+# A string is essentialty a sequence of characters also called an array. thus we can access the element of this array.
+ 
+# Ex:
+
+ple = "Appleple"
+print(ple[:4])
+print(ple[7]) # returns at specified index
+
+# string methods:
+ # Python provide a set of built-in methods that we can to after and modify the strings.
+
+ # Upper(): THe upper() method converts a string to upper case.
+
+ # Ex:
+  
+str1 = "hello,kulalux"
+print(str1.upper())
+
+# Lower(): The lower() method converts astring to lower case.
+# Ex:
+
+str2 ="Hello,Raj"
+print(str2.lower())
+
+# length(len): the len() method find string's length.
+print(len(str2))
+
+# rstrip(): the rstrip removes any trailing characters.
+# Ex:
+
+str3 = "kulalux !!!"
+print(str3.rstrip("!"))
 

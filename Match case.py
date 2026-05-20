@@ -43,3 +43,20 @@ def check_number(x):
 check_number(40)
 check_number(80)
 
+# Ex:
+
+def process(data):
+    match data:
+        case [x, y]:
+            # A listb with two elements
+            print(f"two-element list: {x}, {y}")
+        case [x, y, z]:
+            # A list witj three elements
+            print(f"Three-element list: {x}, {y}, {z}")
+        case _:
+            print("Unknown data format")
+
+process([16, 23])
+process([15, 4, 32])
+process([14, 26, 83, 40])
+

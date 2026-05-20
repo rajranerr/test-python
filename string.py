@@ -120,11 +120,31 @@ print(str5.index("is"))
 print(str5.isalnum())
 
 # isalpha(): The isalnum() methode returns True only if the entire string only consists
-#     of A-Z, a-z. if any other characters or puntuations or numbers(0-9) are present, then itv return False.
+#     of A-Z, a-z. if any other characters or puntuations or numbers(0-9) are present, then its return False.
 # Ex:
 print(str5.isalpha())
 
-# islower():
+# islower(): The islower() methode return true if ait the character in the string are
+#         lower case, else it returns false.
+# Ex:
+print(str4.islower())
+
+# isupper: The isupper() methode return true if ait the character in the string are
+#        upper case, else it return false.
+# Ex: 
+text = "INTERSEPTOR"
+print(text.isupper())
+
+# isprintable(): The isprintable() method True if alt the within the given 
+#              string are printable. if not, then return False.
+# Ex:
+print(str5.isprintable()) 
+
+# isspace: The isspace() method True only and only if the string contains
+#        white spaces, else return False.
+str6 = "    "
+print(str6.isspace())
+
 
 
 

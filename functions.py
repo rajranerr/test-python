@@ -39,5 +39,9 @@ def get_greeting():
 message = get_greeting()
 print(message)
 
+# Ex:
+def my_function():
+    print("Hello i am raj")
 
+my_function()
 

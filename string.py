@@ -145,6 +145,21 @@ print(str5.isprintable())
 str6 = "    "
 print(str6.isspace())
 
+# istitle: The istitle() True only if first letter of the string is capitaized, else it False.
+# Ex:
+print(text.istitle())
+
+# startwith(): The endswith() method checks if the string with a given value. if yes then return True, else return False.
+# Ex:
+print(str5.startswith("interseptor"))
+
+# swapcase(): The swapcase() method change the character casting of the string. upper 
+#         case are converted to lower case and lower case to upper case.
+print(str5.swapcase())
+
+# title(): The title() method captilized ezcd letter of the word within the string.
+# Ex:
+print(str5.title()) 
 
 
 

@@ -3,7 +3,7 @@
 #     statements. If this is your first language, dont worry as i will tell you everything you need to know about match case statement.
 
 #  A match statement will compare a given variable's value to different shapes, also referred to as the
-#    pattern. The main idea is to keep on comparing the variable wirh all the present petterns until it fits
+#    pattern. The main idea is to keep on comparing the variable with all the present petterns until it fits
 #   into one.
 
 # The match case consists of three main entities:

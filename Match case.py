@@ -31,4 +31,15 @@ match status:
 
 # Ex:
 
+def check_number(x):
+    match x:
+        case 40:
+            print("it's 40")
+        case 60:
+            print("it's 60")
+        case _:
+            print("it's neither 40 nor 60")
+
+check_number(40)
+check_number(80)
 

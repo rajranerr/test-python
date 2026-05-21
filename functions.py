@@ -55,7 +55,7 @@ def fun( x ):
     else:
         print("odd")
 
-fun(int(input("Enter any number: "))) # function calling
+fun(6) # function calling
 
 
 # Parameterized functions:
@@ -64,7 +64,10 @@ fun(int(input("Enter any number: "))) # function calling
 def fun(name):
     print("hello", name)
 
-fun(str(input("Enter name: ")))
+fun("kulalux")
+
+# Function Argument and return statement
+
 
 # Function with default argument
 # Ex:
@@ -73,7 +76,7 @@ def fun(x, y=70):
     print("x:",x)
     print("y:",y)
 
-fun(int(input("Enter number: ")))
+fun(40)
     
 #  Keyword argument functions:
 # Ex:
@@ -81,6 +84,10 @@ def fun(name, age):
     print(name, "is", age, "year old.")
 
 fun(age=18,name="kulalux")
+
+
+
+
 
 #  User-Defined functions Example:
 
@@ -93,6 +100,7 @@ def greet_user(username):
 message = greet_user("kulalux")
 
 print(message) # output:
+
 
 
 

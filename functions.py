@@ -47,7 +47,7 @@ my_function()
 
 # Examples:
 
-# user-define functions ex:
+#  functions ex:
 
 def fun( x ):
     if (x % 2 == 0):
@@ -57,7 +57,6 @@ def fun( x ):
 
 fun(int(input("Enter any number: "))) # function calling
 
-# Types of Users defined functions
 
 # Parameterized functions:
 # EX:
@@ -67,3 +66,40 @@ def fun(name):
 
 fun(str(input("Enter name: ")))
 
+# Function with default argument
+# Ex:
+
+def fun(x, y=70):
+    print("x:",x)
+    print("y:",y)
+
+fun(int(input("Enter number: ")))
+    
+#  Keyword argument functions:
+# Ex:
+def fun(name, age):
+    print(name, "is", age, "year old.")
+
+fun(age=18,name="kulalux")
+
+#  User-Defined functions Example:
+
+# We define our oen function to greet a user
+
+def greet_user(username):
+    return f"Hello, {username} wellcome back."
+
+# we call our custume function
+message = greet_user("kulalux")
+
+print(message) # output:
+
+
+
+
+
+
+
+
+
+     

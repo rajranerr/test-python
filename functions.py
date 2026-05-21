@@ -45,3 +45,25 @@ def my_function():
 
 my_function()
 
+# Examples:
+
+# user-define functions ex:
+
+def fun( x ):
+    if (x % 2 == 0):
+        print("enen")
+    else:
+        print("odd")
+
+fun(int(input("Enter any number: "))) # function calling
+
+# Types of Users defined functions
+
+# Parameterized functions:
+# EX:
+
+def fun(name):
+    print("hello", name)
+
+fun(str(input("Enter name: ")))
+

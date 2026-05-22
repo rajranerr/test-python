@@ -49,49 +49,108 @@ my_function()
 
 #  functions ex:
 
-def fun( x ):
+def number( x ):
     if (x % 2 == 0):
         print("enen")
     else:
         print("odd")
 
-fun(6) # function calling
+number(6) # function calling
+
+# Types of Function Arguments
 
 
-# Parameterized functions:
-# EX:
+#  default argument: Default argument use a predefined value when no value is passed during the function call.
 
-def fun(name):
-    print("hello", name)
-
-fun("kulalux")
-
-# Function Argument and return statement
-
-
-# Function with default argument
 # Ex:
 
-def fun(x, y=70):
+def my_function(x, y=70):
     print("x:",x)
     print("y:",y)
 
-fun(40)
+my_function(40)
     
-#  Keyword argument functions:
+#  Keyword argument : pass valyes using parameter names, so argument order does not matter'
+
 # Ex:
-def fun(name, age):
+def myfunction(name, age):
     print(name, "is", age, "year old.")
 
-fun(age=18,name="kulalux")
+myfunction(age=18,name="kulalux")
 
+# Positional Arguments: Value are assigned to parameters based on their order in the function call.
 
+# Ex: 
 
+def nameAge(name, age):
+    print("Hi, I am", name)
+    print("My age is", age)
 
+print("Case-1:")
+nameAge("stark",21)
+
+print("Case-2")
+nameAge(21, "stark")
+
+# Arbitrary Arguments: allow functions to accept multiple values. This is done using two special symbols:
+# *args collects extra positional arguments aa a tuple.
+# **kwargs collects extra keyword arguments as a dictionary.
+# Ex:
+def my_function(*args, **kwargs):
+    print("Non-Keyword Arguments (*args):")
+    for arg in args:
+        print(arg)
+
+    print("Keyword Arguments (**kaargs):")
+    for key, value in kwargs.items():
+        print(f"{key} == {value}")
+my_function('Hey', 'Welcome', first='geeks', mid='for', last='geeks')
+
+# Functions within Functions
+
+# A function defined inside another function is called an inner function (or nested function).
+#  It is used to organize related logic and access variables from the outer function. 
+# Ex:
+def f1():
+    s = 'I love kulaluxfornature' 
+    def f2():
+        print(s)
+    f2()
+f1()
+
+# Return Statement: Return is used to end a function and send a value back to the caller.
+#  It can return any data type. multiple values (packed into tuple), or None if no value is given.
+
+# Syntax
+#        return(expression)
+
+#  Parameters: expression is the value returned by the function. If no value is retuned, it returns None by default.
+def sq_value(num):
+    return num**2
+print(sq_value(2))
+print(sq_value(-4))
+
+# Pass by Reference and Pass by Value: Variables refer to objects. function behavior depends on whether the object is mutable or immutable.
+
+# Mutable objects like list can be modified inside functions.
+# Immutable objects like integers and strings remain unchanged.
+
+def myfunction(x):
+    x[0] = 20
+
+b = [10, 11, 12, 13, 14]
+myfunction(b)
+print(b)
+
+def myfunction2(x):
+    x = 20
+
+a = 10
+myfunction2(a)
+print(a)
 
 #  User-Defined functions Example:
-
-# We define our oen function to greet a user
+# We define our own function to greet a user
 
 def greet_user(username):
     return f"Hello, {username} wellcome back."

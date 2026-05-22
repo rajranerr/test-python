@@ -160,13 +160,40 @@ message = greet_user("kulalux")
 
 print(message) # output:
 
+# 1. Simple Function (No Arguments)
+    #  A basic function that perform a single action without requiring any input.
+# Ex:
+def greet():
+    print("Hello! Welcomee to python.")
 
+# calling the function
+greet()
+  
+# 2. Function with parameters and Return value
+    # This function taken numbers, adds them, and returns the result for furthr use.
+# Ex:
+def add_numbers(a,b):
+    sum_result = a + b
+    return sum_result
 
+# Using the returned value
+result = add_numbers(20, 8)
+print(f"The sum is: {result}")
 
+# Function with Default Arguments
+ # You can provide default values for parameters. if value isn't provided during the call, the default is used.
+# Ex:
+def describe_pet(name, animal_type="dog"):
+    print(f"I have a {animal_type} named {name}.")
 
+describe_pet("moti")              # User default "dog"
+describe_pet("whiskers", "cat")   # Overrides with "cat"
 
-
-
-
-
-     
+# 4. Function with keyword Arguments
+    # Arguments can be passed by name, allowing you to ignor the order of parameters.
+# Ex:
+def student_info(name, age):
+    print(f"student: {name}, age: {age}")
+        
+# Order doesn't matter when keyword are used 
+student_info(age=17, name="Aline")     

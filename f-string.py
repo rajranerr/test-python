@@ -16,3 +16,14 @@ print(txt.format(price = 49))
 name = "Raj Rane"
 country = "Haidarpur Madhya Pradesh"
 print(f"my name is {name} and I am from {country}.")
+
+# Ex:
+Hindi = 70
+English = 75
+mathametics = 85
+chemistry = 75
+physics = 80
+total_subject = Hindi+English+mathametics+chemistry+physics
+print(f"Kulalux got total {total_subject} out of 500")
+percentage = total_subject/500*100
+print(f"{percentage}")

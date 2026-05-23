@@ -196,4 +196,26 @@ def student_info(name, age):
     print(f"student: {name}, age: {age}")
         
 # Order doesn't matter when keyword are used 
-student_info(age=17, name="Aline")     
+student_info(age=17, name="Aline")  
+
+# Example of a user- defined function
+
+# Program to illustrate
+# the use of user-defined functions
+
+def add_numbers(x,y):
+   sum = x + y
+   return sum
+
+num1 = 5
+num2 = 6
+
+print("The sum is", add_numbers(num1, num2))
+
+# Ex:
+def cube_volume(side_length):
+    volume = side_length ** 3
+    return volume
+# Use the function 
+result = cube_volume(3)
+print(f"The volume of the cube is: {result}")

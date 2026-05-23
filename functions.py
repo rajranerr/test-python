@@ -180,7 +180,7 @@ def add_numbers(a,b):
 result = add_numbers(20, 8)
 print(f"The sum is: {result}")
 
-# Function with Default Arguments
+# 3. Function with Default Arguments
  # You can provide default values for parameters. if value isn't provided during the call, the default is used.
 # Ex:
 def describe_pet(name, animal_type="dog"):
@@ -196,4 +196,18 @@ def student_info(name, age):
     print(f"student: {name}, age: {age}")
         
 # Order doesn't matter when keyword are used 
-student_info(age=17, name="Aline")     
+student_info(age=17, name="Aline")    
+
+# Example of a user-defined function
+ # Ex:
+# program to illustrate
+# the use of user-defined functions
+
+def add_numbers(x,y):
+    sum = x + y
+    return sum
+
+num1 = 8
+num2 = 6
+
+print("The sum is", add_numbers(num1, num2))

@@ -58,3 +58,22 @@ print(colors)
 # Ex:
 num.append(12)
 print(num)
+
+# insert(): This method inserts an item at the given index. User has to specify index and the item to be inserted within the insert() method .
+print("Example of insert(): ")
+# Ex:
+colors = ["voilet", "indigo","blue"]
+#            [0]      [1]      [2]
+
+colors.insert(1, "black") # insert item at index
+# updated list colors is:
+print(colors) # output: ["voilet", "black", "indigo", "blue"]
+#                  [0]      [1]         [2]      [3]
+
+# extend(): This mathod adds an entire list or any other collection datatype (set, tuple, dictionary) to the existing list.
+print("Example of extebd(): ")
+# Ex:
+colors = ["voilet", "indigo", "black"]
+rainbow = ["red", "blue", "yellow", "orange", "green"]
+colors.extend(rainbow)
+print(colors)

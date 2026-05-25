@@ -77,3 +77,9 @@ colors = ["voilet", "indigo", "black"]
 rainbow = ["red", "blue", "yellow", "orange", "green"]
 colors.extend(rainbow)
 print(colors)
+
+# Concatenating two lists: You can simply concatenate two list to join two list.
+# Ex:
+colors = ["yellow", "blue", "black", "white"]
+colors2 = ["red", "green", "orange", "voilet", "gray", "silver"]
+print(colors + colors2)

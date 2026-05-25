@@ -47,6 +47,7 @@ print(newlist)
 # Ex:
 newnum = num.copy()
 print(num)
+
 print(newnum)
 
 # append(): This methode items to the end of the existing list.
@@ -83,3 +84,6 @@ print(colors)
 colors = ["yellow", "blue", "black", "white"]
 colors2 = ["red", "green", "orange", "voilet", "gray", "silver"]
 print(colors + colors2)
+=======
+print(newnum)
+

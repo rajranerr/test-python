@@ -48,3 +48,13 @@ print(newlist)
 newnum = num.copy()
 print(num)
 print(newnum)
+
+# append(): This methode items to the end of the existing list.
+print("Examples of append: ")
+# Ex:
+colors.append("indigo")
+print(colors)
+
+# Ex:
+num.append(12)
+print(num)

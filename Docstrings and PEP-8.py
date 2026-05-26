@@ -136,3 +136,5 @@ def info(self, additional=""):
     """
     print(f'My name is {self.name} {self.surname}. I am {self.age} years old.' + additional)
     print(info.__doc__)
+# PEP 8: PEP 8 is the official Style Guide for Python Code, providing a set of conventions to ensure Python code is readable, consistent, and "Pythonic".
+#         Originally written in 2001 by Guido van Rossum, Barry Warsaw, and Nick Coghlan, it centers on the principle that "code is read much more often than it is written".

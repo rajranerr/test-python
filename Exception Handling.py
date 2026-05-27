@@ -30,3 +30,36 @@ except ValueError:
 #     print("Number entered is not an integer.")
 # except ImportError:
 #     print("Index Error") # output: IndexError: list index out of range
+
+# Finally keyword
+# finally Clause:The finally code block is also a part of exception handling. When we handle exception using the try and except block, we can include a finally block at the end. The finally block is always executed, so it is generally used for doing the concluding tasks like closing file resources or closing database connection or may be ending the program execution with a delightful message.
+
+# Syntax:
+# try:
+#     # statements which could generate
+#     # exception
+# except:
+#     # solution of generated evception
+# finally:
+    # block of code which is going to 
+    # execute in any situstion
+
+# The finally block is executed irrespective of the outcome of try ...... except ..... else blocks
+# One of the important use cases of finally block is in a function which returns a value.
+
+# Ex:
+def func1():
+    try:
+        l = [1, 3, 6, 8, 4]
+        i = int(input("Enter the index: "))
+        print(l[i])
+        return 1
+    except:
+        print("Some error occurred")
+        return 0
+    
+    finally:
+        print("I am always executed")
+
+x = func1()
+print(x)

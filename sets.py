@@ -124,7 +124,59 @@ cities.add("akola")
 print(cities)
 
 # update(): If you want to add more than one item, simply create another set or any other iterable object(list, tuple, dictionary), and use the update0 method to add it into the existing set.
-cities = {"bhopal", "indore", "nagpur", "ratlam", "pune"}
+cities = {"bhopal", "indore", "nagpur", "ratlam", "pune" }
 cities2 ={"mumbai", "dehli", "gurugram"}
 cities.update(cities2)
 print(cities)
+
+# remove()/discard(): We can use remove() and discard() to remove items from list.
+
+# Ex:
+cities = {"bhopal", "indore", "nagpur", "ratlam", "pune"}
+cities.remove("nagpur")
+print(cities)
+
+# The main difference between remove and discard is that, if we try to delete an item which is not present in set, then remove() raises an error, whereas discard() does not raise any error.
+
+# Ex:
+# cities = {"bhopal", "indore", "nagpur", "ratlam", "pune"}
+# cities.remove("mumbai")
+# print(cities) #output:  KeyError: 'mumbai'
+
+# Ex:
+cities = {"bhopal", "indore", "nagpur", "ratlam", "pune"}
+cities.discard("ratlam")
+print(cities)
+
+# Ex:
+cities = {"bhopal", "indore", "nagpur", "ratlam", "pune"}
+cities.discard("akola")
+print(cities) # can't see any keyerror.
+
+# pop(): This method removes the last item of the set but the catch is that we don't know which item gets popped as sets are unordered. However, you can access the popped items if you assign the pop() methode to a variable.
+
+# Ex:
+cities = {"indore", "nagpur", "ratlam", "pune"}
+item = cities.pop()
+print(cities)
+print(item)
+
+# del: del is not a methid, rather it is a keyword which deletes the set entirely.
+# Ex:
+# cities = {"bhopal", "indore", "nagpur", "pune", "singapur"}
+# del cities
+# print(cities) # output: NameError: name 'cities' is not defined.
+
+# clear(): This maethod clears all items in the set and prints an empty set.
+# Ex:
+cities = {"bhopal", "indore", "nagpur", "pune", "akola"}
+cities.clear()
+print(cities)
+
+# Check if item exists: You can also check if an itam exists in the set or not.
+# Ex:
+info = {"Alise", 19, False, 5,9}
+if "Alise" in info:
+    print("Alice is present.")
+else:
+    print("Alice is absent.")

@@ -63,3 +63,62 @@ def func1():
 
 x = func1()
 print(x)
+
+# Examples:
+
+# 1. Catching Specific Exceptions: Catching specific exceptions makes code to respond to different exception types differently. It precisely makes your code safer and easier to debug. It avoids masking bugs by only reacting to the exact problems you expect.
+
+# Ex: This code handles ValueError and ZeroDivisionError with different messages.
+try:
+    # This will cause ValueError
+    x = int("str")
+    inv = 1 / x # Inverse calculation
+
+except ValueError:
+    print("Not Valid")
+
+except ZeroDivisionError:
+    print("Zero has no inverse!")
+
+# 2. Catching Multiple Exceptions: We can catch multiple exceptions in a single block if we need to handle them in the same way or we can separate them if different types of exceptions require different handling.
+
+# Ex:  This code attempts to convert list elements and handles ValueError, TypeError and IndexError.
+a = ["10", "twenty", 30]
+try:
+    # 'twenty' cannot be converted to int
+    total = int(a[0]) + int(a[1])
+
+except (ValueError, TypeError) as e:
+    print("Error", e)
+
+except ImportError:
+    print("Index out of range.")
+
+# 3. Catch-All Handlers and Their Risks: Catch-all handler is used to call to catch any exception (similar to else statement). Use only except keyword to define it:
+
+# Ex: This code tries dividing a string by a number, which causes a TypeError.
+try:
+    # Risky operation: dividing string by number
+    res = "200" / 10
+
+except ArithmeticError:
+    print("Arthmetic problem.")
+
+except:
+    print("Something went wrong!")
+
+# Raise an Exception: We raise an exception in Python using the raise keyword followed by an instance of the exception class that we want to trigger. We can choose from built-in exceptions or define our own custom exceptions by inheriting from Python's built-in Exception class.
+
+# Basic Syntax:
+#       raise ExceptionType("Error message")
+
+# Ex: This code raises a ValueError if an invalid age is given.
+def set(age):
+    if age < 0:
+        raise ValueError("Age cannot be negative.")
+    print(f"Age set to {age}")
+
+try:
+    set(-5)
+except ValueError as e:
+    print(e)

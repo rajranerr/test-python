@@ -56,9 +56,3 @@ for num in range(5):
     if num == 4:
         break
     print(num)
-
-
-
-
-
-

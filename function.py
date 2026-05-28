@@ -12,5 +12,3 @@ print("Hello,"+ name)
  # Ex:
 text = "Hello,nupur"
 print(len(text))
-
-

@@ -81,5 +81,3 @@ b = '8'
 n = a + int(b)
 print(n)
 print(type(n))
-
-

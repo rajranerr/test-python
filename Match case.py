@@ -59,4 +59,3 @@ def process(data):
 process([16, 23])
 process([15, 4, 32])
 process([14, 26, 83, 40])
-

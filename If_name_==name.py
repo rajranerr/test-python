@@ -43,4 +43,5 @@ else:
 # Ex 2:
 def my_function():
     print("I am inside my_function.")
-my_function()
+if __name__ == "__main__":
+    my_function()

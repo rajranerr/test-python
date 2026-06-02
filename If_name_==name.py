@@ -40,8 +40,32 @@ if __name__ == "__main__":
     print("Executed when invoked directly")
 else:
     print("Executed when imported as a module")
-# Ex 2:
+# Ex 3:
 def my_function():
     print("I am inside my_function.")
 if __name__ == "__main__":
     my_function()
+# Ex 4:
+import sys
+print("This will always run.")
+if __name__ == "__main__":
+    print("Executed when invoked directly")
+else:
+    print("Executed when imported as a module") 
+# Ex 5:
+def greet(name):
+    print(f"Hello, {name}!")    
+if __name__ == "__main__":
+    greet("Alice")
+# Ex 6:
+def calculate_area(radius):
+    import math
+    return math.pi * radius ** 2  
+if __name__ == "__main__":
+    area = calculate_area(5)
+    print(f"The area of the circle with radius 5 is: {area}")
+# Ex 7:
+def main():
+    print("This is the main function.")
+if __name__ == "__main__":
+    main()

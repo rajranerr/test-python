@@ -84,4 +84,3 @@ print(colors)
 colors = ["yellow", "blue", "black", "white"]
 colors2 = ["red", "green", "orange", "voilet", "gray", "silver"]
 print(colors + colors2)
-print(newnum)

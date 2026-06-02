@@ -84,3 +84,28 @@ print(colors)
 colors = ["yellow", "blue", "black", "white"]
 colors2 = ["red", "green", "orange", "voilet", "gray", "silver"]
 print(colors + colors2)
+
+# Examples:
+# Ex 1:
+import math
+pie = math.pi
+print("The value of pi is: ", pie)
+
+# Ex 2:
+import pandas
+# Create a simple DataFrame
+data = {'Name': ['Alice', 'Bob', 'Charlie'], 'Age': [25, 30, 35]}
+df = pandas.DataFrame(data)
+print(df)
+
+# Importing specific Functions:
+# Ex 1:
+from math import sqrt
+print("The square root of 16 is: ", sqrt(16))
+# Ex 2:
+from datetime import datetime
+now = datetime.now()
+print("Current date and time: ", now)
+# Ex 3:
+from math import pi
+print("The value of pi is: ", pi)

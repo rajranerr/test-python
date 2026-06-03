@@ -21,16 +21,16 @@ f.close()
 
 # Ex 4:
 # Read and write("r+"): Opens the file with the pointer placed at the beginning.
-f = open('example.txt','r+')
-f.write("Hello world!\n")
-f.close()
+# f = open('example.txt','r+')
+# f.write("Hello world!\n")
+# f.close()
 
 # Ex 5:
 # Binary Mode("b"): Used for non-text formats like images (e.g., "rb", "wb").
-f = open('example.txt','rb')
-text = f.read()
-print(text)
-f.close()
+# f = open('example.txt','rb')
+# text = f.read()
+# print(text)
+# f.close()
 
 # Ex 6:
 # Checking File Properties: Once the file is open, we can check some of its properties:

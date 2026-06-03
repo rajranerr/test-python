@@ -47,3 +47,18 @@ with open("myfile.txt", "rb") as f:
     f.read()   # Keep reading further ahead
     f.seek(saved_position) # Telepport right back to the boolmarked spot
 f.close()
+
+# truncate() function: When you open a file in Python using the open function, you can specify the mode in which you want to open the file. If you specify the mode as 'w' or 'a', the file is opened in write mode and you can write to the file. However, if you want to truncate the file to a specific size, you can use the truncate function.
+# Ex:
+with open("myfile2,txt", "w") as f:
+    f.write('Hello World!')
+    f.truncate(12)
+with open("myfile.txt", "r") as f:
+    print(f.read())
+
+# Ex:
+import math
+
+print(math.trunc(3.7))
+print(math.trunc(-4.8)) # (flooring would give -4)
+print(int(-6.3))  # (built-in int() also truncates floats)

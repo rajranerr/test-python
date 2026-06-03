@@ -114,3 +114,13 @@ g()
 print("global:",a)
 h()
 print("global:",a)
+
+# Ex 4:
+x = 30
+
+def my_function():
+    y = 74
+    print(y)
+
+my_function()
+print(x)

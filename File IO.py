@@ -3,7 +3,7 @@
 # Example:
 # Ex 1: Writing to a file(w): Use the "w" mode to open a file for writing.
 f = open('example.txt','w')
-f.write('Hello i am raj\n')
+f.write('Hello, I am raj rane\n')
 f.write('I am from haidarpur')
 f.close()
 # Ex 2: Reading a File(r): Use the "r" mode to extract data. 

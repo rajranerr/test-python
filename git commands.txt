@@ -1,0 +1,34 @@
+git init                                                      
+clear                                                         
+ls                                                            
+ls -a                                                         
+dir                                                      
+clear       
+git add .                                                 
+git add <file>                                                                                                           
+git commit -m "massege"                                  
+git status
+git rm --cached <file>
+rm
+git restore
+git push origin main
+git remote add origin <url>
+git remote -v
+git remote set-url origin https://tokon url@github.com/rajranerr/raj_rane_16.git
+cd <file>
+mkdir <file>
+git clone <url>
+history
+git pull
+git branch -m <rename>
+git branch
+git checkout -B <name>
+git branch <name>
+git switch <branch name>
+git checkout <branch name>
+git log
+git log --oneline
+git merge
+git fetch
+dir
+pip

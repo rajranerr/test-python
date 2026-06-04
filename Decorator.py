@@ -28,3 +28,31 @@ def log_decorator(func):
 def add_numbers(a, b):
     return a + b
 print(add_numbers(20, 50))
+
+# Preserving Function Identity with functools.wraps
+# Ex:
+from functools import wraps
+
+def preserve_meta(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        return func(*args, **kwargs)
+    return wrapper
+
+# Decorators That Accept Arguments:To pass arguments directly into a decorator (e.g., @repeat(num_times=3)), you need a third nested layer. The outermost function acts as a "decorator factory" that returns the actual decorator. 
+# Ex:
+def repeat(num_times):
+    def decorator_repeat(func):
+        @wraps(func)
+        def wrapper(*args, **kwargs):
+            for _ in range(num_times):
+                result = func(*args, **kwargs)
+            return result
+        return wrapper
+    return decorator_repeat
+
+@repeat(num_times=2)
+def greet(name):
+    print(f"Hello {name}")
+
+greet("Maria")

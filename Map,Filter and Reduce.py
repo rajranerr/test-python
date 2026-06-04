@@ -86,3 +86,10 @@ numbers = [2, 4, 5, 6, 8, 10]
 # Starts at 100, then adds 2, 4, 5, 6, 8, and 10
 total = reduce(lambda x,y: x + y, numbers, 100)
 print(total)
+
+# Example: Combining All Three 
+from functools import reduce
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+# Pipline: filter even-> square them -> sum them up
+result = reduce(lambda x, y: x + y, map(lambda x: x**2, filter(lambda x: x % 2 == 0, numbers)))
+print(result)

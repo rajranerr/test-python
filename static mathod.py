@@ -5,12 +5,35 @@
 # Code Example:
 # You can call a static method directly using the class name, without instantiating an object. 
 
-class MathUtils:
+class Check:
     @staticmethod
-    def is_even(number):
-        # Operates independently of class or instance data
-        return number % 2 == 0
+    def is_even(n):
+        return n % 2 == 0
+    
+print(Check.is_even(8))
 
-# Calling the static method directly on the class
-result = MathUtils.is_even(8)
-print(result)  
+# Ex:
+class Calculate:
+    @staticmethod
+    def add(a, b):
+        return a + b
+    
+result = Calculate.add(62, 20)
+print(result)
+
+# Ex:
+class Temperature:
+    @staticmethod
+    def to_fahrenheit(c):
+        return (c * 9/5) + 32
+    
+print(Temperature.to_fahrenheit(30))
+
+# Ex:
+class Person:
+    @staticmethod
+    def is_adult(age):
+        return age >= 18
+
+print(Person.is_adult(17))
+print(Person.is_adult(21))

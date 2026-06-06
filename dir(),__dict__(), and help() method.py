@@ -30,3 +30,31 @@ print(help(str))
 
 # Ex:
 print(help(Person))
+
+# Example:
+class Programmer:
+    """Represents a software developer."""
+    def __init__(self, name, language):
+        self.name = name
+        self.language = language
+
+    def code(self):
+        return f"{self.name} is writing code."
+
+# Create an instance
+dev = Programmer("Alex", "Python")
+
+# 1. Using dir()
+# Lists EVERYTHING: instance attributes, custom methods, and inherited dunder methods.
+print("--- dir() Output ---")
+print(dir(dev))  
+
+# 2. Using __dict__
+# Shows ONLY the instance's unique attributes and their current values as a key-value pair.
+print("\n--- __dict__ Output ---")
+print(dev.__dict__)  
+
+# 3. Using help()
+# Prints full human-readable documentation, docstrings, and method definitions.
+print("\n--- help() Output ---")
+help(dev)

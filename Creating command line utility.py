@@ -66,3 +66,11 @@ if __name__ == "__main__":
 
 # [project.scripts]
 # mytool = "my_tool.main:main"
+
+# Install and Test Locally
+
+# 1. Open your terminal in the root directory (my_cli_project/).
+# 2. Run an editable installation using pip: 
+# pip install -e
+# 3. un your utility directly from anywhere in your terminal using the shortcut name:
+# greet Bob -r 2

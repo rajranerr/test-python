@@ -74,3 +74,21 @@ if __name__ == "__main__":
 # pip install -e
 # 3. un your utility directly from anywhere in your terminal using the shortcut name:
 # greet Bob -r 2
+
+# Ex:
+import sys
+
+def main():
+    # Defensive programming against index errors
+    if len(sys.argv) < 3:
+        print("Usage: python script.py <name> <age>")
+        sys.exit(1)
+        
+    name = sys.argv[1]
+    # Command line inputs always default to strings
+    age = int(sys.argv[2]) 
+    
+    print(f"Hello {name}, you are {age} years old.")
+
+if __name__ == "__main__":
+    main()

@@ -8,29 +8,29 @@
 # Tasks: Wrappers that schedule a coroutine to run concurrently on the event loop as soon as possible. 
 
 # Example: 
-# import asyncio
+import asyncio
 
-# async def fetch_data(task_id: int, delay: int):
-#     print(f"Task {task_id}: Starting...")
-#     # Yields control to the event loop, simulating a network request
-#     await asyncio.sleep(delay) 
-#     print(f"Task {task_id}: Data fetched!")
-#     return f"Result {task_id}"
+async def fetch_data(task_id: int, delay: int):
+    print(f"Task {task_id}: Starting...")
+    # Yields control to the event loop, simulating a network request
+    await asyncio.sleep(delay) 
+    print(f"Task {task_id}: Data fetched!")
+    return f"Result {task_id}"
 
-# async def main():
-#     # Modern approach (Python 3.11+) to handle structured concurrency safely
-#     async with asyncio.TaskGroup() as tg:
-#         task1 = tg.create_task(fetch_data(1, 2))
-#         task2 = tg.create_task(fetch_data(2, 3))
-#         task3 = tg.create_task(fetch_data(3, 4))
-#         task4 = tg.create_task(fetch_data(4, 1))
+async def main():
+    # Modern approach (Python 3.11+) to handle structured concurrency safely
+    async with asyncio.TaskGroup() as tg:
+        task1 = tg.create_task(fetch_data(1, 2))
+        task2 = tg.create_task(fetch_data(2, 3))
+        task3 = tg.create_task(fetch_data(3, 4))
+        task4 = tg.create_task(fetch_data(4, 1))
         
-#     # Execution pauses here until all tasks in the TaskGroup finish
-#     print("All tasks finished.")
-#     print(f"Collected: {task1.result()}, {task2.result()}, {task3.result()}, {task4.result()}")
+    # Execution pauses here until all tasks in the TaskGroup finish
+    print("All tasks finished.")
+    print(f"Collected: {task1.result()}, {task2.result()}, {task3.result()}, {task4.result()}")
 
 # Entry point to execute the main coroutine
-# asyncio.run(main())
+asyncio.run(main())
 
 # Ex:
 import asyncio
@@ -72,3 +72,37 @@ async def fn2():
     print("three")
     
 asyncio.run(fn())
+
+# Ex: 
+
+import asyncio
+
+
+async def func1():
+    print("Function 1 started..")
+    await asyncio.sleep(2)
+    print("Function 1 Ended")
+
+
+async def func2():
+    print("Function 2 started..")
+    await asyncio.sleep(3)
+    print("Function 2 Ended")
+
+
+async def func3():
+    print("Function 3 started..")
+    await asyncio.sleep(1)
+    print("Function 3 Ended")
+
+
+async def main():
+    L = await asyncio.gather(
+        func1(),
+        func2(),
+        func3(),
+    )
+    print("Main Ended..")
+
+
+asyncio.run(main())

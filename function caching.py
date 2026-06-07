@@ -68,17 +68,51 @@ def count_vowels(sentence):
 print(count_vowels("Welcome to python practice"))
 
 # Ex: 
-from functools import Iru_cache 
-import time
+# from functools import Iru_cache 
+# import time
 
-@Iru_cache(maxsize=None)
-def fx(n):
-    time.sleep(6)
-    return n*6
+# @Iru_cache(maxsize=None)
+# def fx(n):
+#     time.sleep(6)
+#     return n*6
 
-print(fx(20))
-print("done for 20")
-print(fx(32))
-print("done for 32")
-print(fx(3))
-print("done for 3")
+# print(fx(20))
+# print("done for 20")
+# print(fx(32))
+# print("done for 32")
+# print(fx(3))
+# print("done for 3")
+
+# Ex:
+from functools import lru_cache
+
+@lru_cache(maxsize=32)
+def fib(n):
+    if n < 2:
+        return n
+    return fib(n-1) + fib(n-2)
+
+print([fib(n) for n in range(20)])
+print([fib(n) for n in range(10)])
+
+# Ex:
+from functools import wraps
+
+def memoize(function):
+    memo = {}
+    @wraps(function)
+    def wrapper(*args):
+        try:
+            return memo[args]
+        except KeyError:
+            rv = function(*args)
+            memo[args] = rv
+            return rv
+    return wrapper
+
+@memoize
+def fibonacci(n):
+    if n < 2: return n
+    return fibonacci(n - 1) + fibonacci(n - 2)
+
+print(fibonacci(30))

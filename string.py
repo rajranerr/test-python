@@ -160,6 +160,3 @@ print(str5.swapcase())
 # title(): The title() method captilized ezcd letter of the word within the string.
 # Ex:
 print(str5.title()) 
-
-
-

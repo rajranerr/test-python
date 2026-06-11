@@ -55,10 +55,4 @@ for num in range(5):
         continue
     if num == 4:
         break
-    print(num)
-
-
-
-
-
-
+    print(num) 

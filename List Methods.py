@@ -84,5 +84,65 @@ print(colors)
 colors = ["yellow", "blue", "black", "white"]
 colors2 = ["red", "green", "orange", "voilet", "gray", "silver"]
 print(colors + colors2)
-print(newnum)
 
+# Examples:
+# Ex 1:
+import math
+pie = math.pi
+print("The value of pi is: ", pie)
+
+# Ex 2:
+import pandas
+# Create a simple DataFrame
+data = {'Name': ['Alice', 'Bob', 'Charlie'], 'Age': [25, 30, 35]}
+df = pandas.DataFrame(data)
+print(df)
+
+# Importing specific Functions: Instead of importing the entire module, you can import specific functions, classes, or variables directly into your current namespace using the from keyword. This allows you to use them without the module prefix.
+# Ex 1:
+from math import sqrt
+print("The square root of 16 is: ", sqrt(16))
+# Ex 2:
+from datetime import datetime
+now = datetime.now()
+print("Current date and time: ", now)
+# Ex 3:
+from math import pi
+print("The value of pi is: ", pi)
+
+# Importing Modules with Aliases: To avoid naming conflicts or to shorten the module name, you can use the as keyword to create an alias for the imported module.
+# Ex 1:
+from math import sqrt as square_root
+print("The square root of 25 is: ", square_root(25))
+# Ex 2:
+import numpy as np
+array = np.array([1, 2, 3])
+print("NumPy array: ", array)   
+# Ex 3:
+import pandas as pd
+data = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})
+print("Pandas DataFrame: ")
+print(data)
+# Ex 4:
+import math as m
+result = m.sqrt(49)
+print("The square root of 49 is: ", result)
+
+# Imorting Everything from a Module (*): You can use the from module_name import * syntax to import all public elements from a module into your current namespace. However, this practice is generally discouraged because it can lead to name clashes and make your code less readable.
+# Ex 1:
+from math import *
+print(pi) # Accessing the constant 'pi'
+print(factorial(5)) # Accessing the function 'factorial'
+print(sin(pi/2)) # Accessing the function 'sin'
+# Ex 2: 
+from datetime import *
+now = datetime.now()
+print("Current date and time: ", now)
+
+# Handling Import Errors: When you try to import a module that doesn't exist or has a typo in its name, Python raises an ImportError. You can handle this error using a try-except block to provide a more user-friendly message or to take alternative actions.
+# Ex 1:
+# try:
+    # import mathematics # Incorrect module name
+    # print(mathematics.pi)
+# except ImportError:
+    # print("The module 'mathematics' could not be found. Please check the module name and try again.")
